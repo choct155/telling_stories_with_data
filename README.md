@@ -1,4 +1,4 @@
-TELLING STORIES WITH DATA
+# TELLING STORIES WITH DATA
 
 Telling stories with data helps us to both understand the problem at hand and to articulate a viewpoint about 
 potential solutions. This class will provide students with tools and skills to provide actionable insights for
@@ -11,7 +11,9 @@ or policy question. Assignments will involve both written and oral presentation.
 During this course, students will develop the following tactical skills:
 
 1. Gain experience with a variety of publicly available data sources;
-2. Gain familiarity with data tools like Excel, Python, and the Jupyter Notebook; and,
-3. Learn how to use application programming interfaces (APIs) to retrieve data.
+2. Gain familiarity with data tools like [Excel](https://products.office.com/en-us/excel),
+   [Python](https://www.python.org/), and the [Jupyter ecosystem](http://jupyter.org/); and,
+3. Learn how to use [application programming
+   interfaces](https://en.wikipedia.org/wiki/Application_programming_interface) (APIs) to retrieve data.
 
 No previous programming experience is required.
