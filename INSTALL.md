@@ -52,4 +52,4 @@ Students are strongly encouraged to use it as an informational source.*
 author actually gives a pretty solid overview of how these tools work together.  
 
 [![Windows
-Install](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=gumSW5eNm_0&list=PLqnp2kbGcPVsVMIlv2nQDOZXtgTyyclNQ&index=5)
+Install](https://img.youtube.com/vi/gumSW5eNm_0/0.jpg)](https://www.youtube.com/watch?v=gumSW5eNm_0)
