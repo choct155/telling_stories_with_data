@@ -7,7 +7,7 @@ necessary tools and increase the probability that technical questions that do ar
 application across students.  With this in mind, we are using the following tools: 
 
 1. [VirtualBox](https://www.virtualbox.org) is a virtualization product that will allow us all to 
-use the same operating system, no matter what operating system (e.g. Windows, MacOS, Linux, etc.)
+use the same operating system, no matter what operating system (e.g. Windows, OSX, Linux, etc.)
 you use.  (Well, if you wrote your own operating system, you may be out of luck.)
 
 2. [Ubuntu](https://www.ubuntu.com) is an open-source operating system, specifically of the Linux
@@ -15,7 +15,7 @@ variety. The advantages of Ubuntu (and
 [Linux distributions](https://en.wikipedia.org/wiki/Linux_distribution) in general) are many.  For
 our purposes, however, it is helpful that they are unix-based, which is the development environment
 used for many of the tools we will employ. The upshot is that installations can go more smoothly in
-many cases. (Note that MacOS is similar under the hood, and can often leverage similar benefits.)
+many cases. (Note that OSX is similar under the hood, and can often leverage similar benefits.)
 Secondly, and this is important, linux distributions *tend to be free*. Ubuntu, specifically, is a
 user-friendly environment that retains similar functionality to Windows and Mac environments, while
 also providing access to the robust suite of linux utilities.
@@ -37,19 +37,54 @@ efficiently identify opportunities for improvement.
 
 ## ACQUISITION OF INSTALLATION MEDIA
 
-Installation of VirtualBox and Vagrant in Windows and MacOS environments can generally be handled by
-installation wizards.  To acquire the appropriate files, students can navigate to the links above
-and find them in the "Downloads" section for each application site.  The videos below provide
-representative walkthroughs of installation on both Windows and Mac machines.  
+Installation of VirtualBox and Vagrant in Windows and OSX environments can generally be handled by
+installation wizards.  To acquire the appropriate files, students can click on the respective sites
+below and find the installers in the "Downloads" section for each application site. If installation
+is occurring in a linux environment, installation instructions will differ based upon the flavor of
+linux used. 
+
+[![VirtualBox](figs/virtualbox.png)](https://www.virtualbox.org)
+[![Vagrant](figs/vagrant.png)](https://www.vagrantup.com)
+
+## INSTALLATION OF VIRTUALBOX AND VAGRANT
+
+
+The videos below provide representative walkthroughs of installation on both Windows and Mac
+machines.  
+
+### Windows
+
+The first video focuses on installation of VirtualBox and Vagrant on Windows, but the author
+actually gives a pretty solid overview of how these tools work together.  
+
+[![Windows
+Install](https://img.youtube.com/vi/gumSW5eNm_0/0.jpg)](https://www.youtube.com/watch?v=gumSW5eNm_0)
+
+### OSX
+
+
+## ADDITIONAL RESOURCES
 
 *Note that, in general, there are numerous videos on [YouTube](https://www.youtube.com) that provide
 great information about all of the tools we will be using, from applications to operating systems.
 Students are strongly encouraged to use it as an informational source.*
 
-### VirtualBox
+### The Unix Shell
 
-**Windows:** The first video focuses on installation of VirtualBox and Vagrant on Windows, but the
-author actually gives a pretty solid overview of how these tools work together.  
+One of the biggest advantages of operating in a unix-based or adjacent environment is the
+[shell](https://en.wikipedia.org/wiki/Unix_shell).
+While it is true that Windows offers command line access, unix-based systems have generally featured
+the shell as the cornerstone of interaction with the computer. This method of interacton can be far
+more flexible and efficient than interaction via the [Graphical User
+Interface](https://en.wikipedia.org/wiki/Graphical_user_interface) (GUI) after learning just a few
+of the basic functions available. That said, I won't sugar coat it, it takes practice.  Fortunately,
+[Software Carpentry](https://software-carpentry.org) has, among a host of great resources, a solid
+[introduction](https://swcarpentry.github.io/shell-novice/) to the [Bourne Again
+Shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (bash). bash is fairly ubiquitous in the
+Unix space, and the syntax it employs also works in large part in OSX. Learning how to use it will
+probably make your life easier. For folks that prefer a video walkthrough of features, here is a
+representative video that can be found on YouTube:
 
-[![Windows
-Install](https://img.youtube.com/vi/gumSW5eNm_0/0.jpg)](https://www.youtube.com/watch?v=gumSW5eNm_0)
+[![Bash Intro](https://img.youtube.com/vi/oxuRxtrO2Ag/0.jpg)](https://www.youtube.com/watch?v=
+xuRxtrO2Agi)
+
