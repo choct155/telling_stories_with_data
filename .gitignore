@@ -1,0 +1,8 @@
+# Python - byte-compiled / optimized / DLL files / Notebook checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints
+
+# Editor files (swaps)
+*.sw[mnop]
