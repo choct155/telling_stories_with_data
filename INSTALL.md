@@ -101,9 +101,67 @@ this virtual machine instance, but also the text file (`test`) you just created!
 to have more points of overlap, you can do so by leveraging ["synced
 folders"](https://www.vagrantup.com/docs/synced-folders/).
 
-Back on your host machine, you can power down the virtual machine by submitting `vagrant halt`.
+In setting up our environment, we will also need to use the VirtualBox manager. If you run the
+VirtualBox application on your host machine, you should see the currently running instance of the virtual machine you
+just created in the list on the left-hand side.  Leave this manager open, because we will come back
+to it.
+
+On your host machine, you can power down the virtual machine by submitting `vagrant halt` in the
+same directory you used to initialize the virtual machine.
 Since we do not want to use the defualt VM, you can go ahead and destroy that machine with `vagrant
-destroy`. The actual 
+destroy`. The actual
+[Vagrantfile](https://github.com/choct155/telling_stories_with_data/blob/master/Vagrantfile) we will
+use for this class is located on [Github](https://github.com/). Replace the current Vagrantfile on
+your host machine with the one on the other end of the above link. This new Vagrantfile points to
+Ubuntu 17.10 and will enable the use of a Graphical User Interface from within Virtualbox. Once the
+new Vagrantfile is in place, run `vagrant up` again to start your new machine. Initially, you will
+still see only a command line environment. Sign in again with 'vagrant' as the user name and
+password. Once you are at the command line, submit `startx` and your GUI environment should start
+up. Once you have confirmed that the GUI is running, feel free to power down the VM from your host
+machine with `vagrant halt`.
+
+### SCREEN SIZE ADJUSTMENT
+
+It turns out that adjusting screen size in a VirtualBox session requires a bit of set up. First, we
+must install the [GuestAdditions](https://www.virtualbox.org/manual/ch04.html) module on the *guest*
+machine. To do this, we need to grab the image file that contains the module
+(`VBoxGuestAdditions_5.2.4.iso` is located [here](http://download.virtualbox.org/virtualbox/5.2.4/))
+and "insert" it into our virtual machine's CD-ROM drive. 
+
+You might ask yourself, how does a computer
+that consists entirely of software have a CD-ROM drive? In reality, we are dealing with a virtual
+version of such a drive, and our base box does not come with said virtual drive. To add one, go to
+the VirtualBox manager (your VM must be powered down). Making sure that the VM you want to modify is
+selected, navigate via mouse to `Settings > Storage`. Click on the CD-looking icon next the IDE
+Controller to add a new disc drive. Make sure to leave it empty, and exit the settings dialogue.
+
+Then, navigate via mouse to `File > Preferences > Display`. Change the maximum guest screen size to
+`None` and click OK. Now we have the pieces in place to install GuestAdditions on the guest machine.
+
+Start your VM again with `vagrant up`, sign in, and start up the GUI. Your VM instance should still
+be inside of a window on your host machine, and at the top you will see menu options. Navigate to
+`Devices > Insert Guest Additions CD Image ...`. It may seem like nothing has happened, but in
+reality, VirtualBox will reach out to the ISO location linked to above, and place the GuestAdditions
+ISO in our virtual CD drive. Double-click on the `File System` icon on your guest VM and you should
+see an entry under devices that looks like a CD (labeled `VBox_GAs_5.2.4`). Look inside the CD for a
+file called `VBoxLinuxAdditions.run`, and drag it onto the desktop. This file is our installer.
+
+Now, open your greatest and best friend, the [bash
+shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). It's the icon in the bottom panel that
+looks kind of like a less stylish version of the image below, and it can be started by double-clicking 
+on it.
+
+![Bash](https://www.techy360.com/wp-content/uploads/2017/11/bashmini-1.png)
+
+After all that work to get a GUI, we are back at the command line. Submit the following commands:
+
+	`cd /home/vagrant/Desktop` 			# Navigate to your desktop
+	`chmod +x VBoxLinuxAdditions.run` 	# Make the file executable (if it wasn't already)
+	`./VBoxLinuxAdditions.run`			# Run the installer
+
+Let the installer do it's thing (confirming when and if needed) and then power down the VM with
+`vagrant halt` back on the host machine. When you start the VM again, you should see a much larger
+and more manageable screen.
 
 ## ADDITIONAL RESOURCES
 
