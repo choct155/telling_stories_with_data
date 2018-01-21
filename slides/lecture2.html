@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/storytelling.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/white_adj.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Storytelling with Data</h1>
+					<h3>January 22, 2018</h3>
+					<br/>
+					<h2>Getting Acquainted with Our Analytic Environment</h2>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is an</h2>
+						<h2><a href="https://en.wikipedia.org/wiki/Operating_system">Operating System (OS)</a>?</h2>
+					</section>
+					<section>
+						<h2>A bridge between applications and hardware</h2>
+						<div class="twocolumn">
+							<div>
+								<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Operating_system_placement.svg">
+							</div>
+							<div>
+								<p> The most common OSs are <a href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a>
+									and <a href="https://en.wikipedia.org/wiki/MacOS">macOS</a>.
+								</p>
+								<p>The OS should not be confused with the user interface, be it a terminal or GUI.</p>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2><a href="https://en.wikipedia.org/wiki/Graphical_user_interface">Graphical User Interfaces
+							</a>are quite popular</h2>
+							<img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Xerox_Star_8010_workstations.jpg">
+					</section>
+					<section>
+						<h2>An OS GUI is just a special type of <a href="https://en.wikipedia.org/wiki/Shell_(computing)">shell</a></h2>
+						<p>Text-based shells (e.g. the <a href="https://en.wikipedia.org/wiki/Cmd.exe"> Windows command prompt</a> or
+							<a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a>) can present as intimidating,
+							but they are your best friend. Graphical shells are just wrappers around some of the commands that
+							shells can execute.
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>What is a <a href="https://en.wikipedia.org/wiki/Virtual_machine">Virtual Machine</a>?</h3>
+					</section>
+					<section>
+						<h2>Applications that emulate software systems</h2>
+						<ul>
+							<li>VMs allow you to try another OS without a full install</li>
+							<li>VMs can enable the use of applications that cannot be run on some systems</li>
+							<li>VMs can help us ensure that all of our programs run the same way</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Why are we using Virtual Machines?</h3>
+						<ul>
+							<li>When software is developed, it assumes a given method of locating the resources it needs</li>
+							<li>Typically, software is developed in a single environment, and then adapted to work elsewhere</li>
+							<li>Adaptions can create complications in application behavior</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>What is <a href="https://en.wikipedia.org/wiki/Linux">Linux</a>?</h3>
+						<img src="https://www.unixmen.com/wp-content/uploads/2014/02/linux.png">
+					</section>
+					<section>
+						<h2>Linux is not an OS. It's a <a href="https://en.wikipedia.org/wiki/Kernel_(operating_system)">kernel</a></h2>
+						<div class="twocolumn">
+							<div>
+								<p>Developed by Linus Torvaldis, Linux is a catchall name for an open-source kernel.</p>
+							</div>
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/380px-Kernel_Layout.svg.png">
+							<div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>A kernel is only one part of the OS...</h2>
+						<p>...but it is the most important part. All in, an OS provides a
+							<a href="https://www.youtube.com/watch?v=9GDX-IyZ_C8&list=PLIbUZ3URbL0Gqn0q2-MYJd-3nv6zw7GCQ">variety of functions</a>:</p>
+						<ul>
+							<li>Loads and manages processes</li>
+							<li>Provides interface to hardware</li>
+							<li>Provides a file system</li>
+							<li>Provides a user interface</li>
+						</ul>
+						<p>The kernel essentially coordinates these tasks.</p>
+					</section>
+					<section>
+						<h3>Why do we care again?</h3>
+						<ul>
+							<li>Linux distributions tend to be free for personal use</li>
+							<li>Linux distributions tend to be open source</li>
+							<li>Linux distributions tend to come packaged with many useful development tools and libraries</li>
+							<li>For all these reasons, analytic packages are often designed and tested for use on Linux systems</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Enter <a href="https://www.ubuntu.com">Ubuntu</a>...</h2>
+						<img src="https://assets.ubuntu.com/v1/c037fd75-ubuntu-logo.png">
+					</section>
+					<section>
+						<h2>Ubuntu is one of the most popular Linux distributions because...</h2>
+						<ul>
+							<li>...the GUI is intuitive and easy to use;</li>
+							<li>...it provides full shell functionality</li>
+							<li>...it makes it easy to install and run programs</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Ubuntu is an OS, not a GUI</h2>
+						<div class="twocolumn">
+							<div>
+								<p>Multiple command line and graphical shells are compatible. We will be using
+								<a href="https://xfce.org">xfce</a>, but <a href="https://www.gnome.org">gnome</a>
+								is another popular choice, and <a href="https://en.wikipedia.org/wiki/Unity_(user_interface)">unity</a> used to ship
+								with the default Ubuntu install.</p>
+							</div>
+							<div>
+								<img src="https://fthmb.tqn.com/vjT6VEzrMtZrbyrbODNSMwuWN0c=/768x0/filters:no_upscale()/xfce2-5806ec9f3df78cbc28aa61d0.png">
+							</div>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>How do I use a Linux distribution like Ubuntu?</h2>
+						<h5>(Spoiler: you can use it just like Windows or macOS)</h5>
+					</section>
+					<section>
+						<h2>Suppose I want to open an editor like <a href="https://atom.io">Atom</a></h2>
+						<div class="twocolumn">
+							<div>
+								<p>You can navigate to the Atom Editor icon and simply double-click on it...</p>
+							</div>
+							<div>
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Atom_1.0_icon.png/768px-Atom_1.0_icon.png">
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>... or you can use your friend, the shell</h2>
+						<img src="figs/run_atom.png">
+					</section>
+					<section>
+						<h2>Then you can code to your heart's content.<h2>
+						<img src="https://i.github-camo.com/e8a69a2fe0324130464ebc0f2a34b0cdb7c62867/68747470733a2f2f6e6f7365676c69642e6769746875622e696f2f6275696c642e676966">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>There are many ways to <a href="https://askubuntu.com/questions/307280/how-do-i-install-applications-in-ubuntu">
+						install applications</a></h2>
+					</section>
+					<section>
+						<h2>Most required apps will be installed for you</h2>
+						<div>
+							<div>
+								<p>In addition to VirtualBox, we will rely on a tool called <a href="https://www.vagrantup.com/intro/index.html">Vagrant</a>
+								to <a href="https://www.vagrantup.com/docs/provisioning/">provision</a>the VMs we will be using.</p>
+							</div>
+							<div>
+								<img src="https://qph.ec.quoracdn.net/main-qimg-d79a506b14e2413dbd661069de7a1b58.webp">
+							</div>
+						</div>
+
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
