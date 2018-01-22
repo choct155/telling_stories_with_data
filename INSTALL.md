@@ -2,16 +2,16 @@
 
 ## OVERVIEW
 
-In this course, we will seek to use a common analysis stack to facilitate deployment of the 
+In this course, we will seek to use a common analysis stack to facilitate deployment of the
 necessary tools and increase the probability that technical questions that do arise have wide
-application across students.  With this in mind, we are using the following tools: 
+application across students.  With this in mind, we are using the following tools:
 
-1. [VirtualBox](https://www.virtualbox.org) is a virtualization product that will allow us all to 
+1. [VirtualBox](https://www.virtualbox.org) is a virtualization product that will allow us all to
 use the same operating system, no matter what operating system (e.g. Windows, OSX, Linux, etc.)
 you use.  (Well, if you wrote your own operating system, you may be out of luck.)
 
 2. [Ubuntu](https://www.ubuntu.com) is an open-source operating system, specifically of the Linux
-variety. The advantages of Ubuntu (and 
+variety. The advantages of Ubuntu (and
 [Linux distributions](https://en.wikipedia.org/wiki/Linux_distribution) in general) are many.  For
 our purposes, however, it is helpful that they are unix-based, which is the development environment
 used for many of the tools we will employ. The upshot is that installations can go more smoothly in
@@ -33,7 +33,7 @@ Installation of VirtualBox in Windows and OSX environments can generally be hand
 installation wizards.  To acquire the appropriate files, students can click on the site
 below and find the installers in the "Downloads" section for each application site. If installation
 is occurring in a linux environment, installation instructions will differ based upon the flavor of
-linux used. 
+linux used.
 
 With respect to Ubuntu, you don't need to install it just yet (that will occur on the Virtual
 Machine itself. You do, however, need a copy of the ISO file that holds the operating system. You
@@ -42,7 +42,7 @@ Save it somewhere that is easily accessible.
 
 [![VirtualBox](figs/virtualbox.png)](https://www.virtualbox.org)
 
-## INSTALLATION OF VIRTUALBOX 
+## INSTALLATION OF VIRTUALBOX
 
 The videos below provide representative walkthroughs of installation on both Windows and Mac
 machines.  
@@ -70,13 +70,17 @@ ISO file you saved earlier. This will allow you to install Ubuntu on the VM.
 
 Once you have installed Ubuntu (and after a restart), open your greatest and best friend, the [bash
 shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). It's the icon in the left panel that
-looks kind of like a less stylish version of the image below, and it can be started by double-clicking 
+looks kind of like a less stylish version of the image below, and it can be started by double-clicking
 on it.
 
 ![Bash](https://www.techy360.com/wp-content/uploads/2017/11/bashmini-1.png)
 
 After all that work to get a GUI, we are back at the command line. Execute all of the commands in
-[provision.sh] and you should have the tools we will use in the course.
+[provision.sh](https://github.com/choct155/telling_stories_with_data/blob/master/provision.sh), and navigate the associated installers. This will take you up through the installation of Miniconda.
+
+At the end of the Miniconda, you will have the option to set Miniconda binary files in your `PATH`, which you should do. You will also need to manually set your `secure_path` to include the same folder (e.g. `/home/[USER]/miniconda3/bin/`).  You can do this by editing the "sudoers" file. To edit it, execute `sudo visudo` in the shell. This will open a text file which, among other things, defines the `secure_path`. Prepend the existing `secure_path` with the Miniconda binary file folder (e.g. `/home/[USER]/miniconda3/bin/:[other stuff on the right side of the secure_path assignment statement]`). Save and close that file.
+
+Once you have updated that file, you can execute all the commands in [conda_provision.sh](https://github.com/choct155/telling_stories_with_data/blob/master/conda_provision.sh). At that point, you should be in good shape with the tools we need (though we may update later).
 
 ## ADDITIONAL RESOURCES
 
@@ -102,4 +106,3 @@ representative video that can be found on YouTube:
 
 [![Bash Intro](https://img.youtube.com/vi/oxuRxtrO2Ag/0.jpg)](https://www.youtube.com/watch?v=
 xuRxtrO2Agi)
-
