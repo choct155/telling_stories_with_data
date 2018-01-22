@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "bento/ubuntu-17.10-i386"
+  config.vm.box = "bento/ubuntu-17.10"
   config.vm.box_version = "201801.02.0"
 
   # Disable automatic box update checking. If you disable this, then
@@ -78,4 +78,7 @@ end
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+
+  # Provision new VM
+  config.vm.provision :shell, path: "provision.sh"
 end

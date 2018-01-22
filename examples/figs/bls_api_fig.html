@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="053785f8-870e-40fd-814c-7fbed880f296"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"d814f195-0801-44e9-af30-b5f286d97fc5":{"roots":{"references":[{"attributes":{"axis_label":"Year","formatter":{"id":"553810a3-ee75-4bae-9fac-7856891f3948","type":"BasicTickFormatter"},"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"51a3cce6-8ade-44c9-9058-921d9f5e408c","type":"BasicTicker"}},"id":"543051d9-c360-4060-b2ff-4556dbf8c714","type":"LinearAxis"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"f238517a-3311-4e31-afb0-8ad6876d7590","type":"BoxAnnotation"},{"attributes":{},"id":"51a3cce6-8ade-44c9-9058-921d9f5e408c","type":"BasicTicker"},{"attributes":{"data_source":{"id":"4e8d70c6-3e13-46f4-86ea-98b530eb6932","type":"ColumnDataSource"},"glyph":{"id":"246b988d-5e00-4406-a6ef-c32abd01835f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6550630b-f8d1-4bda-853d-f1fc115efd1a","type":"Line"},"selection_glyph":null},"id":"c615c09a-eed6-4577-9dcb-dd7005d0a61f","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"}},"id":"1a9ecb9c-7cd1-42fd-81c2-70f42f4a982e","type":"PanTool"},{"attributes":{"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"}},"id":"ffeb58a2-ecc8-445d-bafa-7f87dcd6fbba","type":"SaveTool"},{"attributes":{"callback":null,"column_names":["x","y"],"data":{"x":[2012,2013,2014,2015,2016],"y":[1677,1790,1868,1930,2156]}},"id":"4e8d70c6-3e13-46f4-86ea-98b530eb6932","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#890d13"},"line_width":{"value":3},"x":{"field":"x"},"y":{"field":"y"}},"id":"246b988d-5e00-4406-a6ef-c32abd01835f","type":"Line"},{"attributes":{},"id":"553810a3-ee75-4bae-9fac-7856891f3948","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Health Expenditures for Q1 Consumers Have Increased"},"id":"a1691de8-b85c-4001-ac4c-af3bfcffda5a","type":"Title"},{"attributes":{},"id":"cd8028b2-0204-4b05-9349-95208be527af","type":"LinearScale"},{"attributes":{"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"}},"id":"cc6ec196-3a5e-45d4-9c18-ee4f7a381870","type":"ResetTool"},{"attributes":{"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"}},"id":"4279f095-aaf2-44c8-a08b-4031c59ac98d","type":"HelpTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1a9ecb9c-7cd1-42fd-81c2-70f42f4a982e","type":"PanTool"},{"id":"095e7b0a-dd5b-4c37-9baf-5401d7a5ef64","type":"WheelZoomTool"},{"id":"5ba9d2c4-a6b3-48e6-91ee-4d1b72dcef2c","type":"BoxZoomTool"},{"id":"ffeb58a2-ecc8-445d-bafa-7f87dcd6fbba","type":"SaveTool"},{"id":"cc6ec196-3a5e-45d4-9c18-ee4f7a381870","type":"ResetTool"},{"id":"4279f095-aaf2-44c8-a08b-4031c59ac98d","type":"HelpTool"}]},"id":"4b7c7194-f7e5-4230-8baf-ab791f9406b8","type":"Toolbar"},{"attributes":{"callback":null},"id":"fa182744-db2a-4a73-b2e1-2b865143ebdb","type":"DataRange1d"},{"attributes":{"below":[{"id":"543051d9-c360-4060-b2ff-4556dbf8c714","type":"LinearAxis"}],"left":[{"id":"05e90c72-0fea-452e-9598-67d3daf519e6","type":"LinearAxis"}],"plot_height":300,"plot_width":500,"renderers":[{"id":"543051d9-c360-4060-b2ff-4556dbf8c714","type":"LinearAxis"},{"id":"eaee8019-bba8-4a0b-9307-f6e4524705c5","type":"Grid"},{"id":"05e90c72-0fea-452e-9598-67d3daf519e6","type":"LinearAxis"},{"id":"2ae361b1-a16f-4cc2-b92f-be5ffeac4bad","type":"Grid"},{"id":"f238517a-3311-4e31-afb0-8ad6876d7590","type":"BoxAnnotation"},{"id":"c615c09a-eed6-4577-9dcb-dd7005d0a61f","type":"GlyphRenderer"}],"title":{"id":"a1691de8-b85c-4001-ac4c-af3bfcffda5a","type":"Title"},"tool_events":{"id":"a357c61c-c7e5-498f-bce8-3cdddad8c98b","type":"ToolEvents"},"toolbar":{"id":"4b7c7194-f7e5-4230-8baf-ab791f9406b8","type":"Toolbar"},"x_range":{"id":"fa182744-db2a-4a73-b2e1-2b865143ebdb","type":"DataRange1d"},"x_scale":{"id":"cd8028b2-0204-4b05-9349-95208be527af","type":"LinearScale"},"y_range":{"id":"1d6ff7ed-2ae0-4bf6-8b60-69d104845512","type":"DataRange1d"},"y_scale":{"id":"55bfceb3-9d8b-4130-a412-6646e6500abb","type":"LinearScale"}},"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"a357c61c-c7e5-498f-bce8-3cdddad8c98b","type":"ToolEvents"},{"attributes":{"callback":null},"id":"1d6ff7ed-2ae0-4bf6-8b60-69d104845512","type":"DataRange1d"},{"attributes":{"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"}},"id":"095e7b0a-dd5b-4c37-9baf-5401d7a5ef64","type":"WheelZoomTool"},{"attributes":{},"id":"4212cd4d-0bcd-4b57-859b-4414e8fba00d","type":"BasicTicker"},{"attributes":{"axis_label":"Health Expenditures","formatter":{"id":"92ebd8d2-f1ac-4746-aa34-9c84025a7c74","type":"BasicTickFormatter"},"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"4212cd4d-0bcd-4b57-859b-4414e8fba00d","type":"BasicTicker"}},"id":"05e90c72-0fea-452e-9598-67d3daf519e6","type":"LinearAxis"},{"attributes":{},"id":"92ebd8d2-f1ac-4746-aa34-9c84025a7c74","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"51a3cce6-8ade-44c9-9058-921d9f5e408c","type":"BasicTicker"}},"id":"eaee8019-bba8-4a0b-9307-f6e4524705c5","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"4212cd4d-0bcd-4b57-859b-4414e8fba00d","type":"BasicTicker"}},"id":"2ae361b1-a16f-4cc2-b92f-be5ffeac4bad","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":3},"x":{"field":"x"},"y":{"field":"y"}},"id":"6550630b-f8d1-4bda-853d-f1fc115efd1a","type":"Line"},{"attributes":{},"id":"55bfceb3-9d8b-4130-a412-6646e6500abb","type":"LinearScale"},{"attributes":{"overlay":{"id":"f238517a-3311-4e31-afb0-8ad6876d7590","type":"BoxAnnotation"},"plot":{"id":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed","subtype":"Figure","type":"Plot"}},"id":"5ba9d2c4-a6b3-48e6-91ee-4d1b72dcef2c","type":"BoxZoomTool"}],"root_ids":["cf2f58b2-d11e-49e0-bde9-8617e7b579ed"]},"title":"Bokeh Application","version":"0.12.6"}};
+              var render_items = [{"docid":"d814f195-0801-44e9-af30-b5f286d97fc5","elementid":"053785f8-870e-40fd-814c-7fbed880f296","modelid":"cf2f58b2-d11e-49e0-bde9-8617e7b579ed"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

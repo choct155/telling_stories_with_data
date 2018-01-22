@@ -1,1 +1,1 @@
-/home/choct155/tools/reveal.js/
+/home/choct155/analysis_tools/reveal.js
