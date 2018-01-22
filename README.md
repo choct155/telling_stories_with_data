@@ -1,6 +1,6 @@
-# TELLING STORIES WITH DATA
+# STORYTELLING WITH DATA
 
-Telling stories with data helps us to both understand the problem at hand and to articulate a viewpoint about 
+Telling stories with data helps us to both understand the problem at hand and to articulate a viewpoint about
 potential solutions. This class will provide students with tools and skills to provide actionable insights for
 data-driven decision making in business and policy environments.  Students will complete several short assignments
 through which they will gain familiarity with different statistical concepts and visualization approaches. In each
