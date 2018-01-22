@@ -12,8 +12,9 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
+  # config.vm.box = "bento/ubuntu-17.10"
+  # config.vm.box_version = "201801.02.0"
   config.vm.box = "bento/ubuntu-17.10"
-  config.vm.box_version = "201801.02.0"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -68,6 +69,11 @@ end
   # Install xfce and virtualbox additions
   config.vm.provision "shell", inline: "sudo apt-get update"
   config.vm.provision "shell", inline: "sudo apt-get install -y xfce4 virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11"
+  # config.vm.provision "shell", inline: "sudo add-apt-repository ppa:gnome3-team/gnome3-staging"
+  # config.vm.provision "shell", inline: "sudo add-apt-repository ppa:gnome3-team/gnome3"
+  # config.vm.provision "shell", inline: "sudo apt-get update"
+  # config.vm.provision "shell", inline: "sudo apt-get install gnome gnome-shell"
+  # config.vm.provision "shell", inline: "sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11"
   # Permit anyone to start the GUI
   config.vm.provision "shell", inline: "sudo sed -i 's/allowed_users=.*$/allowed_users=anybody/' /etc/X11/Xwrapper.config"
 
