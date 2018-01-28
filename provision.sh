@@ -9,6 +9,9 @@ cd tools
 # Install git
 sudo apt-get install git
 
+# Install curl
+sudo apt-get install curl
+
 # Install Atom Editor
 curl -L https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
