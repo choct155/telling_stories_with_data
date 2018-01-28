@@ -21,6 +21,9 @@ sudo apt-get install atom
 # Install tmux
 sudo apt-get install tmux
 
+# Vim is available, but only as vim.tiny
+ln -s /usr/bin/vim.tiny /usr/bin/vim
+
 # Get miniconda installer
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sudo chmod +x Miniconda3-latest-Linux-x86_64.sh
