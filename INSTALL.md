@@ -79,7 +79,7 @@ After all that work to get a GUI, we are back at the command line. Execute all o
 [provision.sh](https://github.com/choct155/telling_stories_with_data/blob/master/provision.sh) with
 the following commands (making your way through the associated installers):
 
-	`sudo wget https://github.com/choct155/telling_stories_with_data/blob/master/provision.sh`
+	`sudo wget https://raw.githubusercontent.com/choct155/telling_stories_with_data/master/provision.sh`
 	`sudo chmod +x provision.sh`
 	`sudo ./provision.sh`
 
@@ -96,7 +96,7 @@ Once you have updated that file, you can execute all the commands in
 [conda_provision.sh](https://github.com/choct155/telling_stories_with_data/blob/master/conda_provision.sh),
 with the following commands:
 
-	`sudo wget https://github.com/choct155/telling_stories_with_data/blob/master/conda_provision.sh`
+	`sudo wget https://raw.githubusercontent.com/choct155/telling_stories_with_data/master/conda_provision.sh`
 	`sudo chmod +x conda_provision.sh`
 	`sudo ./conda_provision.sh`
 
