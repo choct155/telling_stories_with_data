@@ -26,339 +26,179 @@
 			<div class="slides">
 				<section>
 					<h1>Storytelling with Data</h1>
-					<h3>January 22, 2018</h3>
+					<h3>February 5, 2018</h3>
 					<br/>
-					<h2>Getting Acquainted with Our Analytic Environment</h2>
+					<h3>Programming Fundamentals</h3>
+					<a href="https://realpython.com/blog/python/emacs-the-best-python-editor/">
+						<img src="https://media.giphy.com/media/11tjmC6y9FLzFe/giphy.gif">
+					</a>
 				</section>
-
+				<section>
+					<h1>You already got a peek...</h1>
+					<p>In the second lecture, we showcased a particular task that is well served by use of a programming
+						language: accessing data via an
+						<a href="https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82">API</a></p>
+						<a href="http://www.robert-drummond.com/2013/05/08/how-to-build-a-restful-web-api-on-a-raspberry-pi-in-javascript-2/">
+        			<img src="https://i1.wp.com/www.robert-drummond.com/wp-content/uploads/2013/05/web20.png" width=1000>
+    				</a>
+					<p>Now let's take some time with the basics.</p>
+				</section>
+				<section>
+					<h1>What is a programming language?</h1>
+				    <div class="twocolumn">
+			        <div>
+			            <p style="font-size: 20px; font-weight: bold">To execute tasks, computers "consume" very low-level binary
+										instructions. It is hard, however, to write instructions as they are consumed because who can keep track of
+			                what they mean in a sea of 0s and 1s. Programming languages were developed to provide varying levels of
+											abstractions around certain kinds of low-level tasks. These languages allow us to write prose (of sorts)
+											to communicate our objectives with a computer.
+			            </p>
+			        </div>
+					    <div>
+					        <img src="https://files.realpython.com/media/vim-ide.90be624b30bf.png" height=400>
+					    </div>
+				    </div>
+				</section>
 				<section>
 					<section>
-						<h2>What is an</h2>
-						<h2><a href="https://en.wikipedia.org/wiki/Operating_system">Operating System (OS)</a>?</h2>
-					</section>
-					<section>
-						<h2>A bridge between applications and hardware</h2>
-						<div class="twocolumn">
-							<div>
-								<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Operating_system_placement.svg">
-							</div>
-							<div>
-								<p> The most common OSs are <a href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a>
-									and <a href="https://en.wikipedia.org/wiki/MacOS">macOS</a>.
-								</p>
-								<p>The OS should not be confused with the user interface, be it a terminal or GUI.</p>
-							</div>
+						<h1>Programming languages are <em>easier</em> than spoken languages</h1>
+						<div class="twocolumn" style="height: 80%">
+						    <div>
+						        <a href="http://pediaa.com/difference-between-morphology-and-syntax/">
+						            <img src="http://pediaa.com/wp-content/uploads/2016/07/Difference-Between-Morphology-and-Syntax-infographic1.jpg" height=400>
+						        </a>
+						    </div>
+						    <div>
+			            <p style="font-size: 20px; font-weight: bold">
+			            Grammar can be decomposed into
+									<a href="https://en.wikipedia.org/wiki/Morphology_(linguistics)">morphology</a> and
+									<a href="https://en.wikipedia.org/wiki/Syntax">syntax</a>.
+			            </p>
+									<div style="height: 60%">
+										<a href="https://www.quora.com/Whats-a-syntax-error">
+											<img src="http://devhumor.com/content/uploads/images/January2017/you-shall-not-parse.jpg" height=400>
+										</a>
+									</div>
+						    </div>
 						</div>
 					</section>
 					<section>
-						<h2><a href="https://en.wikipedia.org/wiki/Graphical_user_interface">Graphical User Interfaces
-							</a>are quite popular</h2>
-							<img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Xerox_Star_8010_workstations.jpg">
-					</section>
-					<section>
-						<h2>An OS GUI is just a special type of <a href="https://en.wikipedia.org/wiki/Shell_(computing)">shell</a></h2>
-						<p>Text-based shells (e.g. the <a href="https://en.wikipedia.org/wiki/Cmd.exe"> Windows command prompt</a> or
-							<a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a>) can present as intimidating,
-							but they are your best friend. Graphical shells are just wrappers around some of the commands that
-							shells can execute.
-						</p>
+						<h1>Syntax analysis still works...</h1>
+							<div class="twocolumn" style="height: 85%">
+				        <div>
+				            <a href="https://subsystemsoflanguage.wordpress.com/syntax/">
+				                <img src="https://subsystemsoflanguage.files.wordpress.com/2014/02/544px-basic_constituent_structure_analysis_english_sentence-svg.png">
+				            </a>
+				        </div>
+				        <div>
+									<!--h2>Basic Python Function</h2-->
+									<br/>
+				            <a href="http://www.voidspace.org.uk/python/weblog/arch_d7_2008_07_05.shtml#e990">
+				                <img src="http://www.voidspace.org.uk/python/weblog/images/basic-function-tartley.png">
+				            </a>
+				        </div>
+							</div>
 					</section>
 				</section>
 				<section>
-					<section>
-						<h3>What is a <a href="https://en.wikipedia.org/wiki/Virtual_machine">Virtual Machine</a>?</h3>
-					</section>
-					<section>
-						<h2>Applications that emulate software systems</h2>
-						<ul>
-							<li>VMs allow you to try another OS without a full install</li>
-							<li>VMs can enable the use of applications that cannot be run on some systems</li>
-							<li>VMs can help us ensure that all of our programs run the same way</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Why are we using Virtual Machines?</h3>
-						<ul>
-							<li>When software is developed, it assumes a given method of locating the resources it needs</li>
-							<li>Typically, software is developed in a single environment, and then adapted to work elsewhere</li>
-							<li>Adaptions can create complications in application behavior</li>
-						</ul>
-					</section>
+					<h1>Why bother learning to code?</h1>
+					<p>While we will provide you with the option to submit assignments using visualization tools of your choosing,
+						a major goal of this course is to expose you to a programming language. Why?
+					</p>
+					<ul style="font-size: 0.7em">
+						<li>Writing code promotes reproducibility because it provides an unambiguous record of decisions</li>
+						<li>It promotes iterative development/refinement because duplication costs are low</li>
+						<li>Done well, writing code can provide durable tools that can be used for different projects</li>
+						<li>Using a general computing language will give you a better tacit sense of how computers operate</li>
+						<li>Exposure to programming increases the range of tasks you can accomplish</li>
+					</ul>
 				</section>
 				<section>
-					<section>
-						<h3>What is <a href="https://en.wikipedia.org/wiki/Linux">Linux</a>?</h3>
-						<img src="https://www.unixmen.com/wp-content/uploads/2014/02/linux.png">
-					</section>
-					<section>
-						<h2>Linux is not an OS. It's a <a href="https://en.wikipedia.org/wiki/Kernel_(operating_system)">kernel</a></h2>
-						<div class="twocolumn">
-							<div>
-								<p>Developed by Linus Torvaldis, Linux is a catchall name for an open-source kernel.</p>
-							</div>
-								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/380px-Kernel_Layout.svg.png">
-							<div>
-							</div>
+					<h1>Why choose Python?</h1>
+					<div class="twocolumn" style="height: 80%">
+						<div>
+							<h2>IEEE Spectrum Rating</h2>
+							<p style="font-size: 0.5em">Take this with a grain of salt...</p>
+							<div style="height: 50%">
+							<a href="https://spectrum.ieee.org/image/MjkyNzIzNQ.jpeg">
+								<img src="https://spectrum.ieee.org/image/MjkyNzIzNQ.jpeg">
+							</a>
 						</div>
-					</section>
-					<section>
-						<h2>A kernel is only one part of the OS...</h2>
-						<p>...but it is the most important part. All in, an OS provides a
-							<a href="https://www.youtube.com/watch?v=9GDX-IyZ_C8&list=PLIbUZ3URbL0Gqn0q2-MYJd-3nv6zw7GCQ">variety of functions</a>:</p>
-						<ul>
-							<li>Loads and manages processes</li>
-							<li>Provides interface to hardware</li>
-							<li>Provides a file system</li>
-							<li>Provides a user interface</li>
-						</ul>
-						<p>The kernel essentially coordinates these tasks.</p>
-					</section>
-					<section>
-						<h3>Why do we care again?</h3>
-						<ul>
-							<li>Linux distributions tend to be free for personal use</li>
-							<li>Linux distributions tend to be open source</li>
-							<li>Linux distributions tend to come packaged with many useful development tools and libraries</li>
-							<li>For all these reasons, analytic packages are often designed and tested for use on Linux systems</li>
-						</ul>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Enter <a href="https://www.ubuntu.com">Ubuntu</a>...</h2>
-						<img src="https://assets.ubuntu.com/v1/c037fd75-ubuntu-logo.png">
-					</section>
-					<section>
-						<h2>Ubuntu is one of the most popular Linux distributions because...</h2>
-						<ul>
-							<li>...the GUI is intuitive and easy to use;</li>
-							<li>...it provides full shell functionality</li>
-							<li>...it makes it easy to install and run programs</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Ubuntu is an OS, not a GUI</h2>
-						<div class="twocolumn">
-							<div>
-								<p>Multiple command line and graphical shells are compatible. We will be using
-								<a href="https://xfce.org">xfce</a>, but <a href="https://www.gnome.org">gnome</a>
-								is another popular choice, and <a href="https://en.wikipedia.org/wiki/Unity_(user_interface)">unity</a> used to ship
-								with the default Ubuntu install.</p>
-							</div>
-							<div>
-								<img src="https://fthmb.tqn.com/vjT6VEzrMtZrbyrbODNSMwuWN0c=/768x0/filters:no_upscale()/xfce2-5806ec9f3df78cbc28aa61d0.png">
-							</div>
 						</div>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>How do I use a Linux distribution like Ubuntu?</h2>
-						<h5>(Spoiler: you can use it just like Windows or macOS)</h5>
-					</section>
-					<section>
-						<h2>Suppose I want to open an editor like <a href="https://atom.io">Atom</a></h2>
-						<div class="twocolumn">
-							<div>
-								<p>You can navigate to the Atom Editor icon and simply double-click on it...</p>
-							</div>
-							<div>
-								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Atom_1.0_icon.png/768px-Atom_1.0_icon.png">
-							</div>
+						<div>
+							<ol>
+								<li>Python is very popular</li>
+								<li>There are a ton of <a href="https://www.fullstackpython.com/best-python-resources.html">
+									pedagogical tools</a> available</li>
+								<li>Python helps you do <a href="https://www.quora.com/What-is-Python-primarily-used-for">
+									things other than data analysis</a></li>
+								<li>Learning Python <a href="https://www.quora.com/How-do-I-learn-a-programming-language-Python-without-a-strong-background-in-computer-science-What-strategies-materials-do-you-use-I-completed-a-course-on-basic-Python-and-I-would-like-to-know-how-to-proceed">
+									doesn't require a CS background</a></li>
+							</ol>
 						</div>
-					</section>
-					<section>
-						<h2>... or you can use your friend, the shell</h2>
-						<img src="figs/run_atom.png">
-					</section>
-					<section>
-						<h2>Then you can code to your heart's content.<h2>
-						<img src="https://i.github-camo.com/e8a69a2fe0324130464ebc0f2a34b0cdb7c62867/68747470733a2f2f6e6f7365676c69642e6769746875622e696f2f6275696c642e676966">
-					</section>
+					</div>
 				</section>
 				<section>
 					<section>
-						<h2><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> is probably the most ubquitous shell
-							in common usage on Unix systems</h2>
-						<img src="https://fthmb.tqn.com/kqEjKbccH2C5maeQCVbqRPAKKUg=/735x0/Gnu-bash-logo.svg-58c6fe745f9b58af5c8d8017.png">
-					</section>
-					<section>
-						<h2>The best way to learn about it is by using it</h2>
-						<p>Bash is a low-level interface that allows the user to issue commands to the computer at the command line
-							or by executing a script. Features include but are not limited to ...</p>
-						<ul>
-							<li>...potentially complex file management</li>
-							<li>...permissions control</li>
-							<li>...process management</li>
-							<li>...application installation and control</li>
-						</ul>
-						<p>You will be using Bash to, at the very least, start up your VM and version control your projects</p>
-					</section>
-					<section>
-						<a href="https://refcard.wordpress.com/2012/03/05/bash-cheat-sheet/">
-							<img src="https://refcard.files.wordpress.com/2012/03/bcs_72_21.png">
-						</a>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2><a href="https://www.python.org/">Python</a> is a general purpose computing language</a><h2>
-						<a href="https://www.python.org/">
-							<img src="figs/python_home.png">
-						</a>
-					</section>
-					<section>
-						<h2>We will lean heavily on the <a href="https://www.anaconda.com/distribution/">Anaconda distribution</a></h2>
-						<a href="https://www.anaconda.com/distribution/">
-								<img src="https://www.anaconda.com/wp-content/uploads/2017/08/Anaconda-Distribution-Diagram.png">
-						</a>
-					</section>
-					<section>
-						<h2>The biggest advantage of Anaconda is the <a href="https://conda.io/docs/">conda</a> package manager</h2>
-						<ul>
-							<li>conda runs on Windows, macOS, and Linux</li>
-							<li>It helps find and install packages</li>
-							<li>It manages dependencies across packages</li>
-							<li>It makes it easy to manage package
-								<a href="https://conda.io/docs/user-guide/tasks/manage-environments.html?highlight=environment">environments</a>
-							</li>
+						<h1>What's the <a href="https://plot.ly/python/ipython-vs-python/">difference</a> between Python and IPython?</h1>
+						<p style="font-size: 0.8em"><a href="https://www.python.org/">Python</a> is the base language itself. It is what you are actually writing
+							(in most cases), and what is ultimately converted into instructions for the computer.</p>
+						<p style="font-size: 0.8em">The "I" in <a href="http://ipython.org/">IPython</a> stands for <em>interactive</em>. IPython is an interface
+							that extends the functionality of Python, while also improving the user experience. Among other things, it
+							provides:</p>
+						<ul style="font-size: 0.7em">
+							<li>Tab autocompletion</li>
+							<li>Clearer and more comprehensive error messages</li>
+							<li>Improved command history management</li>
+							<li>UNIX shell integration (more on this later)</li>
+							<li>A whole mess of graphical user interfaces</li>
 						</ul>
 					</section>
 					<section>
-						<h2>The Anaconda project is also coupled tightly with the <a href="http://jupyter.org/">Jupyter</a> project</h2>
-						<a href="http://jupyter.org/">
-							<img src="figs/jupyter_home.png">
-						</a>
-					</section>
-					<section>
-						<h2>Our coding environment: <a href="https://github.com/jupyterlab/jupyterlab">Jupyter Lab</a></h2>
-						<a href="https://towardsdatascience.com/jupyter-notebooks-are-breathtakingly-featureless-use-jupyter-lab-be858a67b59d">
-							<img src="https://cdn-images-1.medium.com/max/1600/1*W9a6BPo5QWLkkcdXKQ4koA.png">
-						</a>
-					</section>
-					<section>
-						<h2>Jupyter Lab offers multiple ways to use Python</h2>
-						<p>A Python interpreter can always be started from the command line with `python` or `ipython`. Jupyter Lab
-						provides more options:</p>
-						<ul>
-							<li>
-								<a href="https://qtconsole.readthedocs.io/en/stable/">Qt Console</a> is an enhanced interpreter that allows
-								for inline charting
-							</li>
-							<li>
-								<a href="https://jupyter-notebook.readthedocs.io/en/stable/">Notebook</a> is a web-based application that allows
-								inline charting, embedding of links and other resources, and the flexibility of web development
-							</li>
-							<li>
-								Since a shell is available inside of JLab, you can also execute Python <a href="https://learnpythonthehardway.org/book/ex1.html">
-									scripts</a> that you have written in an editor tab.
-							</li>
-						</ul>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>To code is good, to <a href="http://ropensci.github.io/reproducibility-guide/sections/introduction/">replicate</a> divine</h2>
-							<div style="float: left; text-align: left; width: 450; height: 250">
-								<a href="https://git-scm.com/">
-									<img src="https://git-scm.com/images/logos/downloads/Git-Logo-1788C.png" height=500>
-								</a>
+						<h1>Maybe it's just a few GUIs...</h1>
+						<p>... but how does it offer more than one?</p>
+						<br/>
+						<div class="twocolumn" style="height: 80%">
+							<div>
+								The <a href="https://ipython.org/ipython-doc/3/development/how_ipython_works.html">legit genius</a>
+								of the IPython project was to separate the <a href="https://ipython.org/ipython-doc/3/development/kernels.html">kernel</a>
+								(the thing that executes code) from the <a href="https://en.wikipedia.org/wiki/User_interface">user interface</a>
+								(the thing into which you input code).
 							</div>
-							<div style="float: right; text-align: right; width: 450; height: 300">
-								<a href="https://jahya.net/blog/git-vs-github/">
-									<img src="http://3.bp.blogspot.com/-SnWr9oa-G30/UY6tZKwGZPI/AAAAAAAABLc/dyQGoX_i3E8/s1600/Github.png">
+							<div>
+								<a href="https://ipython.org/ipython-doc/3/development/how_ipython_works.html">
+									<img src="https://ipython.org/ipython-doc/3/_images/ipy_kernel_and_terminal.png">
 								</a>
 							</div>
 					</section>
 					<section>
-						<h2><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Version control</a>
-							is not a silver bullet...</h2>
-							<p>...but it is a necessary component of reproducible research</p>
-							<div class="twocolumn">
-								<div>
-									<a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">
-										<img src="https://git-scm.com/book/en/v2/images/local.png">
-									</a>
-								</div>
-								<div>
-									<p>It enables you to code without fear of mistake, because you can always go back to an earlier version</p>
-								</div>
-							</div>
-					</section>
-					<section>
-						<h2><a href="https://github.com/">Github</a> will be our coordinating mechanism</h2>
-						<div class="twocolumn">
-							<div>
-								<a href="https://octodex.github.com/">
-									<img src="https://octodex.github.com/images/octobiwan.jpg">
+						<h1>Why on earth do I care?</h1>
+						<p>That separation makes Jupyter Lab possible...</p>
+						<div class="twocolumn" style="height: 50%">
+							<div style="padding-left: 60px">
+								<a href="https://towardsdatascience.com/jupyterlab-you-should-try-this-data-science-ui-for-jupyter-right-now-a799f8914bb3">
+									<img src="https://cdn-images-1.medium.com/max/1600/1*T2_Ebo4KFoeP6o5lE5WocQ.gif">
 								</a>
 							</div>
-							<div>
-								<ul>
-									<li>You will need to <a href="https://github.com/join">create<a/> a Github account</li>
-									<li>Github has a great collection of <a href="https://guides.github.com/">guides</a> for common tasks</li>
-									<li>A solid <a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf">cheat sheet</a>
-										of common commands is available</li>
-									<li>For more than you ever wanted to know, check out <a href="https://git-scm.com/book/en/v2">Pro Git</a></li>
-								</ul>
+							<div style="height: 70%; padding-left: 80px">
+								<a href="https://www.youtube.com/watch?v=dSjvK-Z3o3U">
+									<img src="https://img.youtube.com/vi/dSjvK-Z3o3U/0.jpg">
+								</a>
 							</div>
 						</div>
-
-					</section>
-
-				</section>
-				<section>
-					<section>
-						<h2>Data files can come in a wide variety of formats</h2>
-						<a href="https://www.ibm.com/support/knowledgecenter/en/SSLVMB_20.0.0/com.ibm.spss.statistics.tut/datatut_textfile.htm">
-							<img src="https://www.ibm.com/support/knowledgecenter/en/SSLVMB_20.0.0/com.ibm.spss.statistics.tut/images/textfile_sample.gif">
-						</a>
+						<p>...and it has implications for your workflow.</p>
 					</section>
 					<section>
-						<h2>They do not always look like tables!</h2>
-						<p>There is a big world out there beyond Excel:</p>
-						<ul>
-							<li>Tabular data (e.g. CSV, TSV, fixed width)</li>
-							<li>Non-tabular data (e.g. JSON)</li>
-							<li>Spatial data (e.g. SHP, GeoJSON)</li>
-							<li>Relational database data (e.g. DB)</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Sometimes data will not come from locally stored files</h2>
-						<ul>
-							<li>We can simulate data via random draws from a statistical distribution</li>
-							<li>We can hard code data</li>
-							<li>We can access data from remote server</li>
-						</ul>
+						<h1>The Jupyter project is an offshoot of the IPython project</h1>
+						<h2>The <a href="http://jupyter.org/">Jupyter Project</a> supports a wide range of languages</h2>
+	            <a href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">
+	                <img src="https://3.bp.blogspot.com/-qfUmCQNmVzg/V4tq5Tm0QUI/AAAAAAAAA7c/f40NNu35hQkVc8ZAjOs_XDwHIg6Er6OVQCLcB/s1600/Jupyter-Supports-Many-Programming-Languages.bmp" height=300>
+	            </a>
 					</section>
 				</section>
 				<section>
-					<section>
-						<h2>What's all this about remote <a href="https://en.wikipedia.org/wiki/Server_(computing)">servers</a>??</h2>
-						<a href="https://stackoverflow.com/questions/11679625/client-vs-server-terminology">
-							<img src="https://i.stack.imgur.com/Q8T7Z.png">
-						</a>
-					</section>
-					<section>
-						<h2>Any time you visit a website, you are using a remote server</h2>
-						<p>A server is just another computer that you have connected to that holds the content you want.</p>
-						<a href="https://computer.howstuffworks.com/web-server1.htm">
-							<img src="https://s.hswstatic.com/gif/webserver-basic-sm.gif">
-						</a>
-						<p>It turns out data can be accessed in a very similar way with the right
-							<a href="https://en.wikipedia.org/wiki/URL">Uniform Resource Locator</a> (URL)</h2>
-					</section>
-					<section>
-						<h2>Enter Data <a href="https://en.wikipedia.org/wiki/Application_programming_interface">
-							Application Programming Interfaces</a>...</h2>
-						<p>An API, in general, is just a clearly defined set of methods that allow software components to communicate
-							with each other. In the data realm, APIs help our machine communicate with a remote server via
-							<a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Syntax">URL</a>, so we can retrieve
-							data from it.</p>
-						</section>
-
-
+					<h1>On to the live examples...</h1>
+					<img src="http://s.quickmeme.com/img/78/78bed69ddb3e981455174dcf9306f0fc22d8e85a6991e815fb0da7fc9fcc0943.jpg">
 				</section>
 
 			</div>
@@ -380,5 +220,5 @@
 				]
 			});
 		</script>
+		</html>
 	</body>
-</html>

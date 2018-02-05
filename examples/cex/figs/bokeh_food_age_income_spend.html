@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="fc719925-365c-4340-9962-60937aef64e9"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"e336256a-6991-4641-91c5-0aa11af5ec07":{"roots":{"references":[{"attributes":{"plot":{"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"}},"id":"577f1bd8-e677-4c2f-963a-7524f22933fd","type":"PanTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"food"},"width":{"value":0.8},"x":{"field":"index"}},"id":"9ac32961-7538-4c20-a0cb-d892f023387b","type":"VBar"},{"attributes":{"callback":null,"column_names":["age","food","pop","market","food_lab","pop_lab","market_lab","index"],"data":{"age":["25-34","35-44","45-54","55-64",">65"],"food":{"__ndarray__":"AAAAAAAIwkAAAAAAACvHQAAAAAAAEsdAAAAAAIAexEAAAAAAgM/CQA==","dtype":"float64","shape":[5]},"food_lab":["$9,232","$11,862","$11,812","$10,301","$9,631"],"index":[0,1,2,3,4],"market":{"__ndarray__":"6bevA+dsUUBI+x9grfJeQD1FDhE3uWJAqpuLv+2mWUActFcfD+dJQA==","dtype":"float64","shape":[5]},"market_lab":["$69.7","$123.8","$149.8","$102.6","$51.8"],"pop":{"__ndarray__":"AAAAAAB+vUAAAAAAAGLEQAAAAACAxMhAAAAAAIB0w0AAAAAAAAO1QA==","dtype":"float64","shape":[5]},"pop_lab":["7,550","10,436","12,681","9,961","5,379"]}},"id":"e405f5cf-1f66-4d7b-9638-75a0fc1f8598","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"110d7356-e3c3-46a1-ac30-022227d5ff5c","type":"LinearAxis"}],"left":[{"id":"240211f3-fc1b-4db7-ab91-20f401fd600c","type":"LinearAxis"}],"outline_line_color":{"value":null},"plot_height":400,"renderers":[{"id":"110d7356-e3c3-46a1-ac30-022227d5ff5c","type":"LinearAxis"},{"id":"d851dcfc-401b-4ad5-8922-ff876b314d4f","type":"Grid"},{"id":"240211f3-fc1b-4db7-ab91-20f401fd600c","type":"LinearAxis"},{"id":"089b861d-02a5-4390-9cf2-c3a7e53f439c","type":"Grid"},{"id":"10005f2a-b91d-472b-9f42-50d0e0f7836d","type":"GlyphRenderer"},{"id":"0409de3e-034e-49bc-99d7-0e28d00804b0","type":"LabelSet"}],"title":{"id":"bc66a230-cf19-4050-b144-078cea803763","type":"Title"},"tool_events":{"id":"a031e129-4b1e-48d6-8df1-ab5a8ae062cd","type":"ToolEvents"},"toolbar":{"id":"57f65dc8-501e-4f12-b77c-4ef38e9e8bef","type":"Toolbar"},"x_range":{"id":"98f15050-e67c-4e31-96fd-43cfedd6c374","type":"DataRange1d"},"x_scale":{"id":"80b91d54-80cc-4a2f-bbb3-aac6898f1613","type":"LinearScale"},"y_range":{"id":"b77cdd54-522d-4483-b26f-5689d7ca2008","type":"Range1d"},"y_scale":{"id":"e1ad5832-1bec-49ca-97fe-5ac642ccf20f","type":"LinearScale"}},"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"plot":{"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"},"tooltips":[["Age","@age"],["Avg Spend","@food_lab"]]},"id":"e3bbc3f6-e78a-481c-9f94-aaa20070757b","type":"HoverTool"},{"attributes":{},"id":"9a3bc7ab-d85e-4fbf-b366-e68c46708a21","type":"BasicTickFormatter"},{"attributes":{"level":"glyph","plot":{"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"},"render_mode":"css","source":{"id":"e405f5cf-1f66-4d7b-9638-75a0fc1f8598","type":"ColumnDataSource"},"text":{"field":"food_lab"},"text_align":"center","text_color":{"value":"#ffffff"},"text_font_style":"bold","x":{"field":"index"},"y":{"field":"food"},"y_offset":{"value":-30}},"id":"0409de3e-034e-49bc-99d7-0e28d00804b0","type":"LabelSet"},{"attributes":{"plot":{"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"}},"id":"857915fa-74dc-4158-9651-94b4787ba161","type":"ResetTool"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"},"ticker":{"id":"7af7961d-9da7-4876-a217-0579cf51ed87","type":"BasicTicker"}},"id":"d851dcfc-401b-4ad5-8922-ff876b314d4f","type":"Grid"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"},"ticker":{"id":"a2f28343-7ecf-4047-b0f5-22a0ff24e641","type":"BasicTicker"}},"id":"089b861d-02a5-4390-9cf2-c3a7e53f439c","type":"Grid"},{"attributes":{},"id":"7af7961d-9da7-4876-a217-0579cf51ed87","type":"BasicTicker"},{"attributes":{"code":"\n    var labels = {0: '25-34', 1: '35-44', 2: '45-54', 3: '55-64', 4: '>65'};\n    return labels[tick];\n"},"id":"e877e602-27af-4e59-b203-5f98ed96f8fb","type":"FuncTickFormatter"},{"attributes":{"axis_label":"Age","formatter":{"id":"e877e602-27af-4e59-b203-5f98ed96f8fb","type":"FuncTickFormatter"},"plot":{"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"},"ticker":{"id":"7af7961d-9da7-4876-a217-0579cf51ed87","type":"BasicTicker"}},"id":"110d7356-e3c3-46a1-ac30-022227d5ff5c","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Average Annual Expenditure on Food by Age"},"id":"bc66a230-cf19-4050-b144-078cea803763","type":"Title"},{"attributes":{"callback":null},"id":"98f15050-e67c-4e31-96fd-43cfedd6c374","type":"DataRange1d"},{"attributes":{},"id":"a031e129-4b1e-48d6-8df1-ab5a8ae062cd","type":"ToolEvents"},{"attributes":{},"id":"e1ad5832-1bec-49ca-97fe-5ac642ccf20f","type":"LinearScale"},{"attributes":{"callback":null,"end":13000},"id":"b77cdd54-522d-4483-b26f-5689d7ca2008","type":"Range1d"},{"attributes":{},"id":"a2f28343-7ecf-4047-b0f5-22a0ff24e641","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e3bbc3f6-e78a-481c-9f94-aaa20070757b","type":"HoverTool"},{"id":"577f1bd8-e677-4c2f-963a-7524f22933fd","type":"PanTool"},{"id":"857915fa-74dc-4158-9651-94b4787ba161","type":"ResetTool"}]},"id":"57f65dc8-501e-4f12-b77c-4ef38e9e8bef","type":"Toolbar"},{"attributes":{"formatter":{"id":"9a3bc7ab-d85e-4fbf-b366-e68c46708a21","type":"BasicTickFormatter"},"plot":{"id":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d","subtype":"Figure","type":"Plot"},"ticker":{"id":"a2f28343-7ecf-4047-b0f5-22a0ff24e641","type":"BasicTicker"},"visible":false},"id":"240211f3-fc1b-4db7-ab91-20f401fd600c","type":"LinearAxis"},{"attributes":{"fill_color":{"value":"#6382b5"},"line_color":{"value":"#6382b5"},"top":{"field":"food"},"width":{"value":0.8},"x":{"field":"index"}},"id":"d2110629-010d-4429-9ddf-53882ca2d439","type":"VBar"},{"attributes":{"data_source":{"id":"e405f5cf-1f66-4d7b-9638-75a0fc1f8598","type":"ColumnDataSource"},"glyph":{"id":"d2110629-010d-4429-9ddf-53882ca2d439","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9ac32961-7538-4c20-a0cb-d892f023387b","type":"VBar"},"selection_glyph":null},"id":"10005f2a-b91d-472b-9f42-50d0e0f7836d","type":"GlyphRenderer"},{"attributes":{},"id":"80b91d54-80cc-4a2f-bbb3-aac6898f1613","type":"LinearScale"}],"root_ids":["dd43bfe1-4a4e-42d4-adc6-57121cd2868d"]},"title":"Bokeh Application","version":"0.12.6"}};
+              var render_items = [{"docid":"e336256a-6991-4641-91c5-0aa11af5ec07","elementid":"fc719925-365c-4340-9962-60937aef64e9","modelid":"dd43bfe1-4a4e-42d4-adc6-57121cd2868d"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

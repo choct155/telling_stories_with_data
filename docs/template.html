@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="css/storytelling.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Storytelling Template</h1>
+					<h3>Spring 2018</h3>
+					<br/>
+					<h4>A slideshow sandbox with
+						<a href="https://github.com/hakimel/reveal.js/"><span style="font-family: Courier">reveal.js</span></a>
+					</h4>
+					<iframe style="width: 90%; height: 50%" src="https://revealjs.com/#/"></iframe>
+				</section>
+				<section>
+					<h1>Hyperlinked Image</h1>
+					<a href="https://datavizblog.com/2017/07/11/dataviz-as-history-annotating-minards-napoleon-map/">
+						<img src="https://datavizblog.files.wordpress.com/2017/07/minard-map-annotated2.jpg?w=1080&h=571">
+					</a>
+				</section>
+				<section>
+					<h1>Two Column Layout</h1>
+					<div class="twocolumn" style="height: 100%">
+						<div>
+							<h2>Useful Dev Resources</h2>
+							<ol>
+								<li>
+									<a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+								</li>
+								<li>
+									<a href="https://gridbyexample.com/examples/">Good CSS Grid</a>
+								</li>
+								<li>
+									<a href="http://learncssgrid.com/">Another good CSS Grid resource</a>
+								</li>
+							</ol>
+							<br/>
+							<div style="font-size: 1.em; margin-top: 25px;">
+								On an unrelated note, the <a href="http://www.worldbank.org/">World Bank</a>
+								has a crazy amount of open data available.
+							</div>
+						</div>
+						<div>
+							<a href="https://datacatalog.worldbank.org/">
+								<img src="figs/worldbank_data.png">
+							</a>
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="cc654d7e-af3f-4b39-a423-efacdb36c20d"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"3fc1ab6c-c89b-42cd-baa2-d812946f3fe6":{"roots":{"references":[{"attributes":{"below":[{"id":"9fda7d90-7cf4-4d8f-9847-e643d83f83e9","type":"LinearAxis"}],"left":[{"id":"848062ef-a5b9-40b7-93bc-92d43f54b96e","type":"LinearAxis"}],"outline_line_color":{"value":null},"plot_height":400,"renderers":[{"id":"9fda7d90-7cf4-4d8f-9847-e643d83f83e9","type":"LinearAxis"},{"id":"2e98f86e-9c87-44ff-8586-aa127f71acf5","type":"Grid"},{"id":"848062ef-a5b9-40b7-93bc-92d43f54b96e","type":"LinearAxis"},{"id":"dc185b96-999f-4f89-b07f-51f039aa2e3b","type":"Grid"},{"id":"8fd1cdd5-bff7-4799-a817-34c2a74ea2b1","type":"GlyphRenderer"},{"id":"eb57e577-8e8a-456d-9d38-60750d4b64ac","type":"LabelSet"}],"title":{"id":"6046ec59-1980-46d3-856a-1fa31af9b016","type":"Title"},"tool_events":{"id":"393d35c9-d3e8-406c-b714-4ec7068a5bff","type":"ToolEvents"},"toolbar":{"id":"d3103d51-603b-4494-8463-88ba07794443","type":"Toolbar"},"x_range":{"id":"a1ce1250-9d89-4964-abdd-c63d79299f05","type":"DataRange1d"},"x_scale":{"id":"d0af1f96-e28e-4092-9533-eaf2dff36172","type":"LinearScale"},"y_range":{"id":"4df82b7a-ef21-4976-8a4b-9e0fa45e3d3e","type":"Range1d"},"y_scale":{"id":"9341499b-15cc-4385-b35e-55ea474dd1d4","type":"LinearScale"}},"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"4a027d0c-8f65-48f7-ae16-fba0f21112ca","type":"BasicTicker"},{"attributes":{"callback":null,"column_names":["age","food","pop","market","food_lab","pop_lab","market_lab","index"],"data":{"age":["25-34","35-44","45-54","55-64",">65"],"food":{"__ndarray__":"AAAAAAAIwkAAAAAAACvHQAAAAAAAEsdAAAAAAIAexEAAAAAAgM/CQA==","dtype":"float64","shape":[5]},"food_lab":["$9,232","$11,862","$11,812","$10,301","$9,631"],"index":[0,1,2,3,4],"market":{"__ndarray__":"6bevA+dsUUBI+x9grfJeQD1FDhE3uWJAqpuLv+2mWUActFcfD+dJQA==","dtype":"float64","shape":[5]},"market_lab":["$69.7","$123.8","$149.8","$102.6","$51.8"],"pop":{"__ndarray__":"AAAAAAB+vUAAAAAAAGLEQAAAAACAxMhAAAAAAIB0w0AAAAAAAAO1QA==","dtype":"float64","shape":[5]},"pop_lab":["7,550","10,436","12,681","9,961","5,379"]}},"id":"e405f5cf-1f66-4d7b-9638-75a0fc1f8598","type":"ColumnDataSource"},{"attributes":{},"id":"4cb84dec-7f16-4884-a98c-dec735d4df94","type":"BasicTicker"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"},"ticker":{"id":"4cb84dec-7f16-4884-a98c-dec735d4df94","type":"BasicTicker"}},"id":"2e98f86e-9c87-44ff-8586-aa127f71acf5","type":"Grid"},{"attributes":{"formatter":{"id":"1395cd78-deb7-4daf-8304-2d8b041c83b6","type":"BasicTickFormatter"},"plot":{"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"},"ticker":{"id":"4a027d0c-8f65-48f7-ae16-fba0f21112ca","type":"BasicTicker"},"visible":false},"id":"848062ef-a5b9-40b7-93bc-92d43f54b96e","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Total Expenditure by Age"},"id":"6046ec59-1980-46d3-856a-1fa31af9b016","type":"Title"},{"attributes":{"axis_label":"Age","formatter":{"id":"0673628f-79f0-4521-8c71-d995803f44cc","type":"FuncTickFormatter"},"plot":{"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"},"ticker":{"id":"4cb84dec-7f16-4884-a98c-dec735d4df94","type":"BasicTicker"}},"id":"9fda7d90-7cf4-4d8f-9847-e643d83f83e9","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"market"},"width":{"value":0.8},"x":{"field":"index"}},"id":"6d6a7f4e-98e9-45f3-97d7-c9903b2ed496","type":"VBar"},{"attributes":{"callback":null,"plot":{"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"},"tooltips":[["Age","@age"],["Avg Spend","@market_lab"]]},"id":"2595a4f5-6632-490a-bc1a-df284d57c345","type":"HoverTool"},{"attributes":{"callback":null,"end":160},"id":"4df82b7a-ef21-4976-8a4b-9e0fa45e3d3e","type":"Range1d"},{"attributes":{"callback":null},"id":"a1ce1250-9d89-4964-abdd-c63d79299f05","type":"DataRange1d"},{"attributes":{"plot":{"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"}},"id":"a8608ea6-dc00-41f1-be1d-855d8aa2c86b","type":"ResetTool"},{"attributes":{"fill_color":{"value":"#539e68"},"line_color":{"value":"#539e68"},"top":{"field":"market"},"width":{"value":0.8},"x":{"field":"index"}},"id":"a1f56dc6-7d56-4f32-b0b5-0a31783f9ad2","type":"VBar"},{"attributes":{"plot":{"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"}},"id":"f40b6684-1381-4376-879f-6b46ee1f86d6","type":"PanTool"},{"attributes":{"data_source":{"id":"e405f5cf-1f66-4d7b-9638-75a0fc1f8598","type":"ColumnDataSource"},"glyph":{"id":"a1f56dc6-7d56-4f32-b0b5-0a31783f9ad2","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6d6a7f4e-98e9-45f3-97d7-c9903b2ed496","type":"VBar"},"selection_glyph":null},"id":"8fd1cdd5-bff7-4799-a817-34c2a74ea2b1","type":"GlyphRenderer"},{"attributes":{},"id":"1395cd78-deb7-4daf-8304-2d8b041c83b6","type":"BasicTickFormatter"},{"attributes":{},"id":"d0af1f96-e28e-4092-9533-eaf2dff36172","type":"LinearScale"},{"attributes":{"level":"glyph","plot":{"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"},"render_mode":"css","source":{"id":"e405f5cf-1f66-4d7b-9638-75a0fc1f8598","type":"ColumnDataSource"},"text":{"field":"market_lab"},"text_align":"center","text_color":{"value":"#ffffff"},"text_font_style":"bold","x":{"field":"index"},"y":{"field":"market"},"y_offset":{"value":-30}},"id":"eb57e577-8e8a-456d-9d38-60750d4b64ac","type":"LabelSet"},{"attributes":{},"id":"9341499b-15cc-4385-b35e-55ea474dd1d4","type":"LinearScale"},{"attributes":{},"id":"393d35c9-d3e8-406c-b714-4ec7068a5bff","type":"ToolEvents"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"2595a4f5-6632-490a-bc1a-df284d57c345","type":"HoverTool"},{"id":"f40b6684-1381-4376-879f-6b46ee1f86d6","type":"PanTool"},{"id":"a8608ea6-dc00-41f1-be1d-855d8aa2c86b","type":"ResetTool"}]},"id":"d3103d51-603b-4494-8463-88ba07794443","type":"Toolbar"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12","subtype":"Figure","type":"Plot"},"ticker":{"id":"4a027d0c-8f65-48f7-ae16-fba0f21112ca","type":"BasicTicker"}},"id":"dc185b96-999f-4f89-b07f-51f039aa2e3b","type":"Grid"},{"attributes":{"code":"\n    var labels = {0: '25-34', 1: '35-44', 2: '45-54', 3: '55-64', 4: '>65'};\n    return labels[tick];\n"},"id":"0673628f-79f0-4521-8c71-d995803f44cc","type":"FuncTickFormatter"}],"root_ids":["c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12"]},"title":"Bokeh Application","version":"0.12.6"}};
+              var render_items = [{"docid":"3fc1ab6c-c89b-42cd-baa2-d812946f3fe6","elementid":"cc654d7e-af3f-4b39-a423-efacdb36c20d","modelid":"c8ac9a7d-253a-45c6-9f8d-7fe663bb1d12"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
