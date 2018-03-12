@@ -289,3 +289,10 @@ body {
    grid-gap: 10px;
    text-align: left;
 }
+
+.heavyright {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-gap: 10px;
+   text-align: left;
+}

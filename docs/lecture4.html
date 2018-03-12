@@ -1,11 +1,10 @@
-
 <!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Storytelling with Data</title>
+		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
 		<link rel="stylesheet" href="css/storytelling.css">
@@ -27,115 +26,39 @@
 			<div class="slides">
 				<section>
 					<h1>Storytelling with Data</h1>
-					<h3>March 12, 2018</h3>
+					<h3>February 5, 2018</h3>
 					<br/>
-					<h3>Projects and Association</h3>
-					<a href="https://github.com/explore">
-						<img src="https://assets-cdn.github.com/images/modules/explore/social.jpg" width=600>
+					<h3>Programming Fundamentals</h3>
+					<a href="https://realpython.com/blog/python/emacs-the-best-python-editor/">
+						<img src="https://media.giphy.com/media/11tjmC6y9FLzFe/giphy.gif">
 					</a>
 				</section>
-        <section>
-  				<section>
-  					<h1>Why do we use Git?</h1>
-            <p>
-              Git is a <a href="https://git-scm.com/video/what-is-version-control">Version Control System</a>.
-              <div class="twocolumn">
-                <div>
-                  <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">
-                    <img src="https://git-scm.com/book/en/v2/images/local.png" />
-                  </a>
-                </div>
-                <div>
-                  <p>
-                    We often have projects that evolve over time. Anytime we need to remember why a decision was
-                    made, we should track decisions when and where they happen.
-                  </p>
-                </div>
-              </div>
-            </p>
-            <p>
-              A VCS automatically tracks these choices in unambiguous detail.
-            </p>
-  				</section>
-  				<section>
-  					<h1>Isn't version control just for programmers?</h1>
-  				    <div class="twocolumn">
-  			        <div>
-                  <p>
-                    While it is true that VCSs are great for code dev, they are useful with any project that involves
-                    writing.  (I'll wait while you compile a big list of projects that don't.)
-                  </p>
-  			        </div>
-  					    <div>
-                  <ul>
-                    <li>
-                      <a href="https://medium.com/@sayhellotovanessa/git-for-writers-write-fiction-like-a-good-programmer-ea6f0309a69a">
-                        <p style="font-weight: bold">
-                          Git for Writers
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://beta.techcrunch.com/2013/10/09/splice-music/">
-                        <p>
-                          Splice: Github for Musicians
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="http://www.slate.com/articles/technology/future_tense/2017/04/we_need_a_github_for_academic_research.html">
-                        <p>
-                          Github for Science
-                        </p>
-                      </a>
-                    </li>
-                  </ul>
-  					    </div>
-  				    </div>
-  				</section>
-          <section>
-            <h1>Why is VC relevant for many groups?</h1>
-            <p>
-              <em>VC is about collaboration<br />(with others and your future self)</em>
-            </p>
-              <a href="https://www.authorea.com/">
-                <img src="https://www.authorea.com/assets/homepage/editor-groups-three-1ffa1a76a92d8eaf2cff6a062dbe0da971aa65f802178541dd31be77a48b15e2.png" width=700/>
-              </a>
-          </section>
-          <section>
-            <h1>How does Git fit in?</h1>
-            <p>
-              <a href="https://git-scm.com/">Git</a> is just one of many version control tools.
-            </p>
-            <iframe src="https://en.wikipedia.org/wiki/List_of_version_control_software" width=700 height=500></iframe>
-          </section>
-          <section>
-            <h1>Github is oriented around Git</h1>
-            <div class="twocolumn">
-              <div>
-                <p>
-                  We use Github because it has become the dominant platform. It comes with a lot of features and houses
-                  a lot of projects.
-                </p>
-              </div>
-              <div>
-                <iframe src="https://guides.github.com/" width=500 height=500></iframe>
-              </div>
-            </div>
-            <a href="https://github.com/explore">
-              <img src="figs/github_explore.png" width=1000 height=200 />
-            </a>
-          </section>
-          <section>
-            <h1>For our purposes...</h1>
-            <p>
-              ...there are a ton of data visualization projects that can, at the very least, provide great viz ideas.
-            </p>
-            <br />
-            <br />
-            <h3><a href="https://github.com/topics/data-visualization">Github Data Viz Topic</a></h3>
-          </section>
-        </section>
+				<section>
+					<h1>You already got a peek...</h1>
+					<p>In the second lecture, we showcased a particular task that is well served by use of a programming
+						language: accessing data via an
+						<a href="https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82">API</a></p>
+						<a href="http://www.robert-drummond.com/2013/05/08/how-to-build-a-restful-web-api-on-a-raspberry-pi-in-javascript-2/">
+        			<img src="https://i1.wp.com/www.robert-drummond.com/wp-content/uploads/2013/05/web20.png" width=1000>
+    				</a>
+					<p>Now let's take some time with the basics.</p>
+				</section>
+				<section>
+					<h1>What is a programming language?</h1>
+				    <div class="twocolumn">
+			        <div>
+			            <p style="font-size: 20px; font-weight: bold">To execute tasks, computers "consume" very low-level binary
+										instructions. It is hard, however, to write instructions as they are consumed because who can keep track of
+			                what they mean in a sea of 0s and 1s. Programming languages were developed to provide varying levels of
+											abstractions around certain kinds of low-level tasks. These languages allow us to write prose (of sorts)
+											to communicate our objectives with a computer.
+			            </p>
+			        </div>
+					    <div>
+					        <img src="https://files.realpython.com/media/vim-ide.90be624b30bf.png" height=400>
+					    </div>
+				    </div>
+				</section>
 				<section>
 					<section>
 						<h1>Programming languages are <em>easier</em> than spoken languages</h1>
