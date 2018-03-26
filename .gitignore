@@ -6,3 +6,10 @@ __pycache__/
 
 # Editor files (swaps)
 *.sw[mnop]
+
+# Large spatial data
+*.shp
+*.dbf
+*.geojson
+*.shx
+./examples/jpmci_access/data/spatial/*
