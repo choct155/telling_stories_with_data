@@ -13,3 +13,4 @@ __pycache__/
 *.geojson
 *.shx
 ./examples/jpmci_access/data/spatial/*
+./examples/zillow/data/*
